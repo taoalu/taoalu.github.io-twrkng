@@ -1,0 +1,68 @@
+#loading {
+    height: 100vh;
+    /* Define a altura da div de loading para ocupar toda a altura da janela */
+    display: flex;
+    /* Permite usar alinhamento flexível */
+    justify-content: center;
+    /* Centraliza horizontalmente */
+    align-items: center;
+    /* Centraliza verticalmente */
+}
+
+table {
+    margin-top: 20px;
+    border-radius: 20px;
+    overflow: hidden;
+    max-width: fit-content;
+    align-content: center;
+}
+
+body {
+    padding: 30px;
+    background: #bdb094;
+}
+
+#pageTitle {
+    margin-bottom: 20px;
+}
+
+#list-classes {
+    margin-top: 30px;
+}
+
+.progress-indicator {
+    color: cyan;
+}
+
+.list-classes-item {
+    margin-right: 20px;
+    margin-bottom: 10px;
+    box-shadow: rgb(0, 255, 183) 0px 0px 1px 1px;
+}
+
+.top-level-first {
+    background-color: #ffd700;
+}
+
+.top-level-second {
+    background-color: #C0C0C0;
+}
+
+.top-level-third {
+    background-color: #CD7F32;
+}
+
+.top-level-item {
+    background-color: #CD7F32;
+}
+
+.player-class-img {
+    width: 40px;
+    height: 40px;
+    border-radius: 5px
+}
+
+/* .nav-tabs .nav-item .nav-link {
+    padding: 0.5rem 1rem;
+    font-size: 20px;
+} */

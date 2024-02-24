@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Bootstrap 4 Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <!-- -->
+    <script src="js/index.js"></script>
+    <!-- -->
+    <link rel="stylesheet" href="css/index.css" />
+    <!-- -->
+</head>
+<!-- -->
+
+<body>
+    <div id="pageTitle" class="container d-flex justify-content-center text-center">
+        <h1 class="ranking-title">Top Level Ranking</h1>
+    </div>
+    <!-- Navbar -->
+    <div class="container col-lg-8">
+        <ul class="nav nav-tabs d-flex justify-content-center">
+            <li class="nav-item">
+                <a class="nav-link active" id="levelRankingTab" data-toggle="tab" href="#levelRankingContent"
+                    aria-controls="levelRankingContent" aria-selected="true"
+                    onclick="rankingChange('ranking_top_level')">Level Ranking</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="playerRankingTab" data-toggle="tab" href="#playerRankingContent"
+                    aria-controls="playerRankingContent" aria-selected="false"
+                    onclick="rankingChange('ranking_sod_personal')">Bellatra Player Ranking</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="clanRankingTab" data-toggle="tab" href="#clanRankingContent"
+                    aria-controls="clanRankingContent" aria-selected="false"
+                    onclick="rankingChange('ranking_sod_clan')">Bellatra Clan Ranking</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="pvpPlayerRankingTab" data-toggle="tab" href="#pvpPlayerRankingContent"
+                    aria-controls="pvpPlayerRankingContent" aria-selected="false"
+                    onclick="rankingChange('ranking_pvp_personal')">PvP Player Ranking</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="pvpClanRankingTab" data-toggle="tab" href="#pvpClanRankingContent"
+                    aria-controls="pvpClanRankingContent" aria-selected="false"
+                    onclick="rankingChange('ranking_pvp_clan')">PvP Clan Ranking</a>
+            </li>
+        </ul>
+    </div>
+    <!-- Class List -->
+    <div>
+        <ul id="list-classes" class="nav nav-pills d-flex justify-content-center">
+            <li id="" class="nav-item list-classes-item" onclick="">
+                <img class="player-class-img" src="https://wartale.com/img/guide/portraits/fighter.png" />
+            </li>
+            <li id="" class="nav-item list-classes-item">
+                <img class="player-class-img" src="https://wartale.com/img/guide/portraits/mechanician.png" />
+            </li>
+            <li id="" class="nav-item list-classes-item">
+                <img class="player-class-img" src="https://wartale.com/img/guide/portraits/archer.png" />
+            </li>
+            <li id="" class="nav-item list-classes-item">
+                <img class="player-class-img" src="https://wartale.com/img/guide/portraits/pikeman.png" />
+            </li>
+            <li id="" class="nav-item list-classes-item">
+                <img class="player-class-img" src="https://wartale.com/img/guide/portraits/atalanta.png" />
+            </li>
+            <li id="" class="nav-item list-classes-item">
+                <img class="player-class-img" src="https://wartale.com/img/guide/portraits/knight.png" />
+            </li>
+            <li id="" class="nav-item list-classes-item">
+                <img class="player-class-img" src="https://wartale.com/img/guide/portraits/magician.png" />
+            </li>
+            <li id="" class="nav-item list-classes-item">
+                <img class="player-class-img" src="https://wartale.com/img/guide/portraits/priestess.png" />
+            </li>
+            <li id="" class="nav-item list-classes-item">
+                <img class="player-class-img" src="https://wartale.com/img/guide/portraits/assassin.png" />
+            </li>
+            <li id="" class="nav-item list-classes-item">
+                <img class="player-class-img" src="https://wartale.com/img/guide/portraits/shaman.png" />
+            </li>
+            <li id="" class="nav-item list-classes-item">
+                <img class="player-class-img" src="https://wartale.com/img/guide/portraits/brawler.png" />
+            </li>
+        </ul>
+    </div>
+    <!-- Progress Indicator -->
+    <div id="loading">
+        <div class="spinner-border progress-indicator" role="status"></div>
+    </div>
+    <!-- DataTable -->
+    <div class="container d-flex justify-content-center col-sm-8">
+        <table id="rankingDataTable" class="table table-dark d-none col-lg-12 table-responsive-sm">
+            <tbody>
+            </tbody>
+        </table>
+    </div>
+</body>
+
+</html>
